@@ -1,0 +1,4 @@
+interface:
+  display_name: "有情绪的下班倒计时"
+  short_description: "构建可离线运行、可截图录屏并带多种人格的下班倒计时网页"
+  default_prompt: "使用 $build-emotional-offwork-countdown 制作一个带普通、突发和周五人格的下班倒计时网页。"
