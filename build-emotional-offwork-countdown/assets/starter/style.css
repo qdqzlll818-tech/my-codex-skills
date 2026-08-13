@@ -278,17 +278,6 @@ body.is-breaking .copy-block::before { transform: rotate(8deg) scaleY(1.2); back
 .sparks { position: fixed; inset: 0; z-index: 4; pointer-events: none; overflow: hidden; }
 .spark { position: absolute; top: -8vh; width: 9px; height: 28px; background: var(--accent); animation: spark-fall 1.6s cubic-bezier(.2,.7,.2,1) forwards; }
 
-.wuxiaoji {
-  position: fixed;
-  right: clamp(12px, 2.6vw, 42px);
-  bottom: clamp(72px, 7vh, 108px);
-  z-index: 2;
-  width: clamp(64px, 7vw, 112px);
-  height: auto;
-  pointer-events: none;
-  transform-origin: 50% 100%;
-  filter: drop-shadow(0 8px 12px rgb(117 105 70 / .12));
-}
 
 body.just-left h1 { animation: freedom-pop 800ms cubic-bezier(.16, 1, .3, 1); }
 
@@ -317,11 +306,6 @@ body.is-breaking .weekend-loader { display: none !important; }
     background: var(--accent);
     animation: friday-hop 760ms cubic-bezier(.16, 1, .3, 1);
   }
-  body[data-persona="friday"][data-mood="friday-hands-off"] .wuxiaoji,
-  body[data-persona="friday"][data-mood="friday-quiet"] .wuxiaoji {
-    animation: chicken-ready 1.8s cubic-bezier(.16, 1, .3, 1) infinite;
-  }
-  body[data-persona="friday"].just-left .wuxiaoji { animation: chicken-hop 760ms cubic-bezier(.16, 1, .3, 1); }
 }
 
 @keyframes office-shake {
@@ -353,16 +337,6 @@ body.is-breaking .weekend-loader { display: none !important; }
   55% { transform: translateY(-36px) scale(1); opacity: 1; }
 }
 
-@keyframes chicken-ready {
-  0%, 76%, 100% { transform: translateY(0) rotate(0); }
-  84% { transform: translateY(-9px) rotate(-2deg); }
-  92% { transform: translateY(0) rotate(2deg); }
-}
-
-@keyframes chicken-hop {
-  0%, 100% { transform: translateY(0) scale(1); }
-  50% { transform: translateY(-28px) scale(1.04); }
-}
 
 @media (max-width: 767px) {
   .countdown-shell { padding: 22px 18px 24px; }
@@ -378,7 +352,6 @@ body.is-breaking .weekend-loader { display: none !important; }
   .bottom-bar { align-items: flex-end; }
   #tiny-note { max-width: 12ch; }
   button { gap: 12px; padding-left: 14px; }
-  .wuxiaoji { width: 58px; right: 10px; bottom: 74px; }
 }
 
 @media (prefers-reduced-motion: reduce) {
