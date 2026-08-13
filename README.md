@@ -51,27 +51,6 @@ build-emotional-offwork-countdown Skill。
 用下班倒计时 Skill 帮我做一个 17:30 下班的版本。
 ```
 
-## 为什么 Skill 里有吴小鸡？
-
-这个 Skill 附带了一个可直接复制使用的网页起始模板，吴小鸡图片位于：
-
-```text
-build-emotional-offwork-countdown/assets/starter/assets/wuxiaoji.png
-```
-
-它属于模板的示例角色素材，用来保留原版网页右下角的人格感和完整视觉效果。
-
-吴小鸡不是 Skill 的强制依赖：
-
-- 不影响倒计时、普通模式、突发需求模式或 Friday Mode 的逻辑
-- 使用者可以保留、替换成自己的角色，或直接删除
-- 如果删除图片，同时移除页面中对应的图片元素即可
-- Skill 的核心是网页结构、时间逻辑、情绪文案与验证流程
-
-简单说：**Skill 负责教 Codex 怎么做这类网页，吴小鸡只是随模板附送的示例角色。**
-
-> 如果公开使用或二次分发角色图片，请确保自己拥有相应的使用与授权权利。
-
 ## 仓库结构
 
 ```text
